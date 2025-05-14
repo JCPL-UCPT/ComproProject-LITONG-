@@ -2,7 +2,6 @@ import javax.swing.JOptionPane;
 
 public class CaesarCipherApp {
 
-    // Encrypts plain text using a key for Caesar Cipher
     public static String encrypt(String text, int key) {
         StringBuilder result = new StringBuilder();
 
@@ -21,7 +20,6 @@ public class CaesarCipherApp {
         return result.toString();
     }
 
-    // Decrypts cipher text using a key for Caesar Cipher
     public static String decrypt(String text, int key) {
         return encrypt(text, 26 - (key % 26));
     }
